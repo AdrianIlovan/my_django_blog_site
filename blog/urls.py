@@ -2,8 +2,6 @@ from django.urls import path
 from . import views
 
 
-def comment_delete_view(args):
-    pass
 
 
 urlpatterns = [
@@ -39,5 +37,11 @@ urlpatterns = [
     # mydjangosite.com/comment/2/remove/ -->online
     path('comment/<int:pk>/remove/', views.comment_remove, name='comment_remove'),
 
-    path('comment/<int:pk>/delete/', comment_delete_view, name='comment_delete'),
+    # 127.0.0.1:8000/comment/2/approve/  -->local
+    # mydjangosite.com/comment/2/approve/ -->online
+    path('comment/<int:pk>/approve/', views.comment_approve, name='comment_approve'),
+
+
+###Comment_delete_view !!! not finished !!!
+    path('comment/<int:pk>/delete/', views.comment_delete_view, name='comment_delete_view'),
 ]
