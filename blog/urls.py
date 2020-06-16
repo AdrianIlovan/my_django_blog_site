@@ -1,9 +1,6 @@
 from django.urls import path
 from . import views
 
-
-
-
 urlpatterns = [
     # 127.0.0.1:8000
     # mydjangosite.com -->online
@@ -20,6 +17,10 @@ urlpatterns = [
     # 127.0.0.1:8000/post/2/edit #or any number -->local
     # mydjangosite.com/post/2/edit -->online
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
+
+    # 127.0.0.1:8000/post/2/delete -->local
+    # mydjangosite.com/post/2/delete -->online
+    path('post/<int:pk>/delete/', views.post_delete, name='post_delete'),
 
     # 127.0.0.1:8000/drafts  -->local
     # mydjangosite.com/drafts -->online
@@ -41,7 +42,4 @@ urlpatterns = [
     # mydjangosite.com/comment/2/approve/ -->online
     path('comment/<int:pk>/approve/', views.comment_approve, name='comment_approve'),
 
-
-###Comment_delete_view !!! not finished !!!
-    path('comment/<int:pk>/delete/', views.comment_delete_view, name='comment_delete_view'),
 ]
