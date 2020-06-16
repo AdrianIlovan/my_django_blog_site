@@ -1,15 +1,16 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock %} </title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?Tangerine:bold,bolditalic|Inconsolata:italic|Droid+Sans" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,500&display=swap" rel="stylesheet">
     <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
     <script src="https://kit.fontawesome.com/89855e8cf7.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="{% static 'css/zenburn.css' %}">
 </head>
 <body>
 
@@ -31,7 +32,7 @@
 <div class="content container">
     <div class=""row>
         <div class="col-md-8">
-
+{% csrf_token %}
             {% block content %}
             {% endblock %}
 

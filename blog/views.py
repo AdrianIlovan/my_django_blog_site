@@ -3,7 +3,7 @@ from django.utils import timezone
 from django.contrib.auth.decorators import login_required
 from .models import Post, Comment
 from .forms import PostForm, CommentForm
-
+from markdownify import markdownify
 
 # Create your views here.
 def post_list(request):

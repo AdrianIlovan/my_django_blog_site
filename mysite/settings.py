@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'markdownify',
 ]
 
 MIDDLEWARE = [
@@ -122,3 +123,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 LOGOUT_REDIRECT_URL = "/"
+
