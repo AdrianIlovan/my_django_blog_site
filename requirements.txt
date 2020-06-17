@@ -1,0 +1,16 @@
+asgiref==3.2.7
+beautifulsoup4==4.9.1
+certifi==2020.4.5.1
+Django==3.0.5
+-e git+https://github.com/andybak/django-admin-notifications@3d34adab86d24d32603e4b5730ecae63242fa8ca#egg=django_admin_notifications
+django-crispy-forms==1.9.1
+Markdown==3.2.2
+markdownify==0.4.1
+mistune==0.8.4
+Pigments==1.6
+Pygments==2.6.1
+pytz==2020.1
+six==1.15.0
+soupsieve==2.0.1
+sqlparse==0.3.1
+wincertstore==0.2
