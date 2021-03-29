@@ -8,7 +8,7 @@ Markdown==3.2.2
 markdownify==0.4.1
 mistune==0.8.4
 Pigments==1.6
-Pygments==2.6.1
+Pygments==2.7.4
 pytz==2020.1
 six==1.15.0
 soupsieve==2.0.1
