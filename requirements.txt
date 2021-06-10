@@ -1,7 +1,7 @@
 asgiref==3.2.7
 beautifulsoup4==4.9.1
 certifi==2020.4.5.1
-Django==3.0.5
+Django==3.1.12
 -e git+https://github.com/andybak/django-admin-notifications@3d34adab86d24d32603e4b5730ecae63242fa8ca#egg=django_admin_notifications
 django-crispy-forms==1.9.1
 Markdown==3.2.2
