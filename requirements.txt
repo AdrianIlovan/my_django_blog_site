@@ -6,7 +6,7 @@ Django==3.0.5
 django-crispy-forms==1.9.1
 Markdown==3.2.2
 markdownify==0.4.1
-mistune==0.8.4
+mistune==2.0.3
 Pigments==1.6
 Pygments==2.6.1
 pytz==2020.1
